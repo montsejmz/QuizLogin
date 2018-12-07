@@ -1,12 +1,12 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
+<ion-header >
+  <ion-navbar >
+    <ion-title style="background-color:#1E1E24">
       Ionic Blank
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding style="background-color:#1E1E24">
   
 
   <ion-item>
@@ -14,10 +14,10 @@
   </ion-item>
 
   <ion-item>
-    <ion-input [(ngModel)] = "password_r" placeholder="Contraseña"></ion-input>
+    <ion-input type ="password" [(ngModel)] = "password_r" placeholder="Contraseña"></ion-input>
   </ion-item>
 
-  <button ion-button (click)="clickInicio()" color = "danger"> Iniciar sesión </button>
-  <button ion-button (click)="clickAgregar()" color = "danger"> Registrarse </button>
+  <button ion-button block (click)="clickInicio()" color = "danger"> Iniciar sesión </button>
+  <button ion-button block (click)="clickAgregar()" color = "danger"> Registrarse </button>
 
 </ion-content>

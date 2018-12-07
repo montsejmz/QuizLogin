@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, AlertController } from 'ionic-angular';
 import {Storage} from '@ionic/storage';
 import { AgregarPage } from '../agregar/agregar';
+import { InicioPage } from '../inicio/inicio';
 
 @Component({
   selector: 'page-home',
@@ -13,6 +14,7 @@ export class HomePage {
   password_r="";
   usuarios=[];
   add=AgregarPage;
+  inicio = InicioPage;
 
 
 
@@ -35,22 +37,38 @@ export class HomePage {
 
   clickInicio(){
 
-    let index =this.usuarios.findIndex(usuario => usuario.usuario == this.usuario_r && usuario.password == this.password_r)
+     if (this.usuario_r.length <=0){
+      const alert2 = this.alertCtrl.create({
+        title: 'Ingrese un usuario válido',
+        buttons:['OK']
+      });
+      alert2.present();
+     }
+     else{
+       
+        let index =this.usuarios.findIndex(usuario => usuario.usuario == this.usuario_r && usuario.password == this.password_r)
 
-    if (index >=0){
-      const alert = this.alertCtrl.create({
-        title: 'Usuario ya registrado',
-        buttons:['OK']
-      });
-      alert.present();
-    }
-    else{
-      const alert = this.alertCtrl.create({
-        title: 'Usuario no registrado',
-        buttons:['OK']
-      });
-      alert.present();
-    }
+        if (index >=0){
+
+          this.navCtrl.push(this.inicio);
+
+          const alert = this.alertCtrl.create({
+            title: 'Bienvenido',
+            buttons:['OK']
+          });
+          alert.present();
+        }
+        else{
+          const alert = this.alertCtrl.create({
+            title: 'Usuario no registrado',
+            buttons:['OK']
+          });
+          alert.present();
+        }
+
+     }
+   
+
   }
 
   clickAgregar(){

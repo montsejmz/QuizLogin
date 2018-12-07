@@ -8,12 +8,18 @@ import {IonicStorageModule} from '@ionic/storage';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AgregarPage } from '../pages/agregar/agregar';
+import { InicioPage } from '../pages/inicio/inicio';
+import { CarritoPage } from '../pages/carrito/carrito';
+import { MostrarPage } from '../pages/mostrar/mostrar';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    AgregarPage
+    AgregarPage,
+    InicioPage,
+    CarritoPage,
+    MostrarPage
   ],
   imports: [
     BrowserModule,
@@ -24,7 +30,10 @@ import { AgregarPage } from '../pages/agregar/agregar';
   entryComponents: [
     MyApp,
     HomePage,
-    AgregarPage
+    AgregarPage,
+    InicioPage,
+    CarritoPage,
+    MostrarPage
   ],
   providers: [
     StatusBar,

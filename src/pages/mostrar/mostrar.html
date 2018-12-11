@@ -23,6 +23,10 @@
           <ion-icon name= "ios-person"> </ion-icon>
           {{producto.name}}
       </ion-item>
+
+      <ion-item>
+          <ion-icon name  = "star" *ngFor = "let s of producto.star"></ion-icon>
+      </ion-item>
         
       <ion-item>
           <ion-icon name= "ios-calendar"> </ion-icon>

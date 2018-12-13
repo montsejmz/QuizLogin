@@ -6,23 +6,25 @@
 -->
 <ion-header>
   <ion-toolbar>
-    <ion-title style = "background-color: #845A6D">Shop</ion-title>
-    <ion-list>
-      <button (click) ="clickCarrito()" ion-item>
-        <ion-icon name="cart" item-end></ion-icon>
-        
+    <ion-title style = "background-color: rgb(101, 152, 202)">Trade All  </ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click) ="clickCarrito()">
+        <ion-icon  name="cart" ></ion-icon>
       </button>
-      </ion-list>
+    </ion-buttons>
+        
+      
   </ion-toolbar>
 
 
 </ion-header>
 
 
-<ion-content style = "background-color: #845A6D "padding>
+<ion-content style = "background-color: rgb(101, 152, 202) "padding>
 
     <ion-list >
-        <ion-card style = "background-color: #FDFDF9" *ngFor = "let p of productos">
+        <ion-card style = "background-color: #9AC4F8" *ngFor = "let p of productos">
           <img (click)="ClickMostrar(p)" src= {{p.imagen}} >
           <ion-card-content>
             <ion-card-title>

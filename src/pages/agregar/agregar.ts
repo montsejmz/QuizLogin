@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { HomePage } from '../home/home';
 import {Storage} from '@ionic/storage'
 
@@ -25,7 +25,7 @@ export class AgregarPage {
 
   
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public storage :Storage, ) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public storage :Storage,public alertCtrl: AlertController ) {
 
     this.usuarios=this.navParams.get("usuarios");
     
@@ -54,6 +54,17 @@ export class AgregarPage {
 
     this.storage.set('datos', JSON.stringify(this.usuarios));
     }
+
+    else{
+
+      const alert3 = this.alertCtrl.create({
+        title: 'Ingrese un usuario válido y una contraseña mayor a 8 caracteres',
+        buttons:['OK']
+      });
+      alert3.present();
+
+    }
+
 
     
 

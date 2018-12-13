@@ -24,43 +24,43 @@ export class InicioPage {
   productos= [
     {
       id: 0,
-      star: [1,2,3,4],
+      star: [1,2,3,4,5],
       name: "Sofia Perez",
       resenas:[
         {
-          username:'Charity Case',
+          username:'Marlene',
           avatar:"..//assets/imgs/girl1.png",
-          review: "Belleza divina, produce gases"
+          review: "Soy la amiga de mis envidias"
 
         }
       ],
       fecha: "10/12/18",
-      avatar:"..//assets/imgs/avatar1.png",
+      avatar:"..//assets/imgs/girl2.png",
       nombre_p: " Bicicleta Vintage",
       imagen: "..//assets/imgs/bici.jpg",
       precio: " $1,000 pesos",
-      disponible: "Si"
+      disponible: "1"
       
     },
     {
       id: 1,
 
-      name: "Sofia Perez",
-      star: [1,2,3,4],
+      name: "Fernanda Villa",
+      star: [1,2,3],
       resenas:[
         {
-          username:'Charity Case',
+          username:'Coco',
           avatar:"..//assets/imgs/girl1.png",
-          review: "Belleza divina, produce gases"
+          review: "Me duro 2 dias ;( "
 
         }
       ],
       fecha: "10/12/18",
-      avatar:"..//assets/imgs/avatar1.png",
+      avatar:"..//assets/imgs/girl1.png",
       nombre_p: "Pollitos de colores" ,
       imagen: "..//assets/imgs/pollito.jpg",
       precio: " $10 pesos",
-      disponible: "Si"
+      disponible: "8"
     },
 
     {
@@ -137,7 +137,7 @@ export class InicioPage {
       ],
       fecha: "10/12/18",
       avatar:"..//assets/imgs/girl1.png",
-      nombre_p: " Papel Higenico" ,
+      nombre_p: " Papel Higiénico" ,
       imagen: " ..//assets/imgs/papel.jpg",
       precio: " $100 pesos",
       disponible: "40"
@@ -306,7 +306,7 @@ export class InicioPage {
       precio: " $500 pesos",
       disponible: "30 "
     },
-
+//sueter navideno
     {
       id: 14,
       star: [1,2,3,4],
@@ -327,7 +327,7 @@ export class InicioPage {
       precio: " $600 pesos",
       disponible: "40 "
     },
-
+//taza
     {
       id: 15,
       star: [1,2,3,4],
@@ -348,7 +348,7 @@ export class InicioPage {
       precio: " $80 pesos",
       disponible: "20 "
     },
-
+//iphone
     {
       id: 16,
       star: [1,2,3,4],
@@ -370,7 +370,7 @@ export class InicioPage {
       disponible: "20 "
     },
 
-    
+//lentes de sol
     {
       id: 17,
       star: [1,2,3,4],
@@ -379,40 +379,40 @@ export class InicioPage {
         {
           username:'Charity Case0001',
           avatar:"..//assets/imgs/girl1.png",
-          review: "Super lindo pero llego oliendo medio gacho ",
+          review: "Reflejan tanto como mi personalidad ",
           fecha_r:"15/09/18"
 
         }
       ],
       fecha: "7/05/18",
       avatar:"..//assets/imgs/girl1.png",
-      nombre_p: "Iphone Xs" ,
-      imagen: " ..//assets/imgs/iphone.jpg",
-      precio: " $30, 000 pesos",
-      disponible: "20 "
+      nombre_p: "Lentes avidador" ,
+      imagen: " ..//assets/imgs/lentes.jpg",
+      precio: " $1,000 pesos",
+      disponible: "50 "
     },
 
     {
       id: 18,
       star: [1,2,3,4],
-      name: "Montserrat",
+      name: "Alexa Arenas",
       resenas:[
         {
           username:'Charity Case0001',
           avatar:"..//assets/imgs/girl1.png",
-          review: "Super lindo pero llego oliendo medio gacho ",
-          fecha_r:"15/09/18"
+          review: "No sirvieron, reprobe ",
+          fecha_r:"15/10/18"
 
         }
       ],
-      fecha: "7/05/18",
+      fecha: "9/10/18",
       avatar:"..//assets/imgs/girl1.png",
-      nombre_p: "Iphone Xs" ,
-      imagen: " ..//assets/imgs/iphone.jpg",
-      precio: " $30, 000 pesos",
+      nombre_p: "Respuestas de examen PAA" ,
+      imagen: " ..//assets/imgs/respuestas.jpg",
+      precio: " $2,000 pesos",
       disponible: "20 "
     },
-
+//dragon
     {
       id: 19,
       star: [1,2,3,4],
@@ -422,16 +422,16 @@ export class InicioPage {
           username:'Jauregui0001',
           avatar:"..//assets/imgs/boy1.png",
           review: "Super lindo pero llego oliendo medio gacho ",
-          fecha_r:"15/09/18"
+          fecha_r:"10/12/18"
 
         }
       ],
-      fecha: "7/05/18",
-      avatar:"..//assets/imgs/girl1.png",
-      nombre_p: "Iphone Xs" ,
-      imagen: " ..//assets/imgs/iphone.jpg",
-      precio: " $30, 000 pesos",
-      disponible: "20 "
+      fecha: "8/12/18",
+      avatar:"..//assets/imgs/avatar1.png",
+      nombre_p: "Peluche de Dragon" ,
+      imagen: " ..//assets/imgs/dragon.jpg",
+      precio: " $250 pesos",
+      disponible: "4 "
     },
 
 
